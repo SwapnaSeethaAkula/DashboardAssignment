@@ -1,0 +1,138 @@
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: whitesmoke;
+  }
+  
+  .sidebar {
+    background-color: #0a0a45ec;
+    color: white;
+    width: 20%;
+  }
+  
+  .menu-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu {
+    display: flex;
+    padding: 5px 10px;
+    margin: 10px 20px;
+    align-items: center;
+    cursor: pointer;
+    position: relative; 
+    opacity: 0.8;
+  }
+  
+  .menu:hover {
+    border-radius: 10px;
+    background-color: #4a4ac76a;
+    opacity: 1;
+  }
+  
+  .para {
+    margin-left: 10px;
+  }
+  
+  .arrow-icon {
+    margin-left: auto;
+    opacity: 1; 
+    transition: opacity 0.3s; 
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu:hover .arrow-icon {
+    opacity: 0; 
+  }
+
+  input.search {
+    width: 260px;
+    height: 40px;
+    border: 1px solid #555;
+    display: block;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("../assets/images/search_icon.svg") no-repeat 13px;
+    position: absolute;
+    right: 50px !important;
+}
+.header{
+    display: flex;
+    /* justify-content: flex-end;  */
+    align-items: center;
+    padding: 30px 50px;
+    .heading{
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.mainboard{
+    width: 80%;
+}
+.card-area{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    display: flex;
+    background-color: white;
+    width: 250px;
+    padding: 20px 10px;
+    margin-left: 20px;
+    border-radius: 10px;
+    .image{
+        padding: 30px;
+        height: 50px;
+        background-color: plum;
+        border-radius: 50%;
+    }
+    .data {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 30px;
+        margin-left: 20px;
+        margin-top: 20px;
+        .paragraph1{
+          margin: 0;
+          font-size: 12px;
+          font-weight: bold;
+          color: grey;
+        }
+        .paragraph2{
+            margin: 0;
+            font-size: 30px;
+        }
+        .paragraph3{
+            margin: 0;
+            font-size: 12px;
+            font-weight: bold;
+        }
+      }
+}
+.charts{
+    margin: 40px 30px 30px 20px;
+    display: flex;
+}
+.barchart{
+    background-color: white;
+    width: 60%;
+    padding: 30px;
+    border-radius: 10px;
+}
+.new-img{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 50px;
+    .new-custom{
+        height: 300px;
+        width: 250px;
+    }
+}
